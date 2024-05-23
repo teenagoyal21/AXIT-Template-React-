@@ -1,0 +1,126 @@
+/* Process.css */
+.Process {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.processImg img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.Sublist {
+  flex: 1 1 300px;
+  max-width: 500px;
+  padding: 10px 20px;
+}
+
+#divider {
+  width: 50px;
+  height: 2px;
+  background-color: orange;
+  margin: 0;
+}
+
+.Sublist h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.Sublist p {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.sublistItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.uploadPic1 {
+  border: 2.5px solid orange;
+  height: 2.5rem;
+  width: 2.5rem;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.uploadPic2 {
+  border: 2.5px solid orange;
+  height: 2.5rem;
+  width: 4rem;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.uploadPic img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.title h5 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.title p {
+  color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Process {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .processImg {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .Sublist {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: -40px;
+  }
+
+  .sublistItem {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+
+  .uploadPic {
+    margin-bottom: 10px;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .uploadPic1 img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+
+  .uploadPic2 img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+}

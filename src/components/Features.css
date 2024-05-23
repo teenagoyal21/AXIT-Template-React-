@@ -1,0 +1,114 @@
+/* Features.css */
+.Features {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.tab {
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#tab1, #tab2, #tab3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 32, 32);
+  width: 90px;
+  height: 50px;
+  color: #fff;
+  border: solid 0.5px gray;
+  font-family: sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#tab1.active, #tab2.active, #tab3.active {
+  background-color: orange;
+}
+
+.content {
+  text-align: start;
+}
+
+.content h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  width: 100%;
+  max-width: 500px;
+  color: gray;
+  font-size: 15px;
+  margin: 0 auto 10px;
+}
+
+.content button {
+  background-color: orange;
+  color: #fff;
+  border: none;
+  margin-top: 5px;
+  border-radius: 2px;
+  padding: 10px;
+  width: 120px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.content button:hover {
+  background-color: darkorange;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Style */
+@media (min-width: 768px) {
+  .Features {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    padding: 0;
+  }
+
+  .tabs {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  #tab1,
+  #tab2,
+  #tab3 {
+    width: 90px;
+    height: 100px;
+  }
+
+  .content p {
+    width: 500px;
+  }
+}
+
+@media (max-width: 425px) {
+  .content {
+    text-align: center;
+  }
+
+  .content button {
+    margin-bottom: 10px;
+  }
+}
